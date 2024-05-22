@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> REGISTER /LOGIN </title>
+    <style>
+        .body{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'poppins', sans-serif;
+           height: 100vh;
+         justify-content: center center;
+         background:linear-gradient(-135deg);
+         align-items: center;
+         outline: none;
+         background-color: rgb(247, 253, 253);
+         color:blue;
+         align-content: center;
+        }
+        .form-container{
+        align-content: center;
+            width: 450px;       
+            backgroun:rgb(12, 14, 12);       
+             padding: 30px;
+            border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0,1);
+    justify-content: center center;
+
+
+        }
+        .form-group{
+            height: 40px;
+            width: 1000px;
+            position: relative;
+            align-content: center center;
+
+        }
+        .form-containe h2{
+            margin-top:0px ;
+            align-content: center; ;
+            
+            
+        }
+        .form label{
+            position: absolute;
+            bottom: 20px;
+            color: grey;
+            pointer-events: none;
+
+        }
+        .form input{
+            width: 100%;
+             padding: 10px; 
+            border: 1px solid #ccc;
+             border-radius: 5px; 
+        }
+        .form-group input[type="submit"] {
+    background-color: #94a2b1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border-color: black 5px;
+
+        }
+        .form-group input{
+            border: none;
+            border-bottom: 2px solid silver;
+            font-size: 17px;
+        }
+        .form input:focus~label{
+            transform: translateY(-20px);
+        }
+        .form-group .derline{
+            position: absolute;
+            bottom: 0px;
+            height: 2px;
+            width: 1000px;
+            background: rgb(23, 18, 167);
+         
+        }
+        .form-group .derline:before{
+            position: absolute;
+            height: 1000px;
+            width: 1000px;
+            content: "";
+            background: #007bff;
+            transform: scaleX(0);
+        }
+        .minicontainer{
+            justify-content: center;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="minicontainer">
+
+        </div>
+        <h2>REGISTER /LOGIN </h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="email">EMAIL ID</label>
+                <input type="password" id="email" name="email" required>
+                <div class="underline">
+
+                </div>
+            
+            </div>
+            <div class="form-group">
+                <label aria-placeholder="" for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required>
+                <div class="underline">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="REGISTER">
+                <input type="submit" value="LOGIN">
+
+            </div>
+    
+    </div>
+</body>
+</html>
